@@ -17,8 +17,27 @@
             height: 100%;
         }
     </style>
+    
 </head>
 <body>
-    <h1>Back to work, silly.</h1>
+    <h1 id="should-designers">Back to work, silly.</h1>
+    <script>
+        var lines = [
+            "Back to work, silly.",
+            "Jazeker gek.",
+            "To ask the question is to answer it.",
+            "Should designers code?",
+            "Yes",
+            "No",
+            "Absolutely.",
+            "No question about it.",
+            "Most definitely.",
+            "Should designers get back to work?"
+        ];
+        
+        var str = lines[Math.floor(Math.random() * lines.length)];
+        console.log(str);
+        document.getElementById("should-designers").innerHTML = str;
+    </script>
 </body>
 </html>
